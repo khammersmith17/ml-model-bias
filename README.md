@@ -1,4 +1,7 @@
 # A module to analyze a machine learning model for bias.
+This is largely based on the Claidry Monitors offered in the AWS SageMaker development kit. Here I am removing the bloat of containerizing the process and unpacking the functionality. The inspiration comes from the inability of the SageMaker Clarify monitors is the inability to analyze features or data that is not in the model. If we monitor bias on protected class data joined on the machine learning features, target, and ground truth value, we can uncover bias the may come from the correlation of different features; or, perhaps implict bias in real outcomes we may not otherwise know of.
+
+This is a work in progress. At some point there will be a SageMaker pipeline step created out of this, wrapping this code in the a form that can generate a SageMaker pipeline step.
 
 ## There is some prerequsite work users need
 - Users need to determine what features are bias
