@@ -1,4 +1,4 @@
-### A module to analyze a machine learning model for bias.
+# A module to analyze a machine learning model for bias.
 
 ## There is some prerequsite work users need
 - Users need to determine what features are bias
