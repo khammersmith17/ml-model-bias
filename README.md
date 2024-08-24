@@ -15,4 +15,7 @@ This is a work in progress. At some point there will be a SageMaker pipeline ste
 - Pre training bias analyzes the raw data for inherent bias
 - Post training bias analyzes the model predictions for bias
 
+
+## Seperating facets
+There is some prework required to seperate data examples into distinct demographic groups. This partition of groups represents a favored and disfavored group. If the feature value of interest is categorical in nature, ie a lable, this goup can simply be partitioned into an advantaged or disadvantaged group by assign one of the class labels. For a continuous value, a threshold needs to be determined that logically seperates data examples into a facored and disfavored group. One can try different thresholds and see where the highest divergence is between loss function values to determine this. The central idea to consider in the set up is partitioning demographics into different groups and for the post training analysis, model scores, the outcomes into 2 distinct group. 
 ## TODO: add metrics and breakdown
